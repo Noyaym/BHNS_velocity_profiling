@@ -1,5 +1,5 @@
 %import data
-link = "C:\Noya\המשך מחקר\angular & velocity profiling\MS1-Q7a75.xlsx";
+link = "C:\Noya\המשך מחקר\angular & velocity profiling\APR4-Q3a75.xlsx";
 opts = detectImportOptions(link);
 opts.SelectedVariableNames = ["beta","y", "Mej"];
 T = readtable(link, opts);
@@ -28,7 +28,7 @@ Rp2 = calc_R(dMdbeta, fit)
 plot(beta, fit, "Color", "#7E2F8E", "LineWidth", 2.5)
 
 legend({"Raw ejecta data", 'Parabolic fit'},'Location','northwest', "FontSize", 14)
-ylabel("$dM_{ej}d\beta [M_\odot]$", "Interpreter","latex", "FontSize", 16)
+ylabel("$dM_{ej}d\beta [M_\odot/c]$", "Interpreter","latex", "FontSize", 16)
 xlabel("$\beta [c]$", "Interpreter", "latex", "FontSize", 16)
 hold off
 
